@@ -1,0 +1,22 @@
+{
+  "name": "klay-js",
+  "version": "0.0.1",
+  "description": "Component to KIELER/KLay Layered JavaScript",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-fetch-pages": "~0.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/automata/klay-js.gif"
+  },
+  "keywords": [
+    "autolayout",
+    "graph",
+    "gwt"
+  ],
+  "author": "automata",
+  "license": "MIT"
+}
