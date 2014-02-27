@@ -2,11 +2,12 @@
   "name": "klay-js",
   "version": "0.0.1",
   "description": "Component to KIELER/KLay Layered JavaScript",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.1",
-    "grunt-fetch-pages": "~0.2.2"
+    "grunt-zip": "~0.13.0",
+    "grunt-curl": "~1.4.0",
+    "grunt-rm": "0.0.4"
   },
   "repository": {
     "type": "git",
