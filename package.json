@@ -1,6 +1,6 @@
 {
   "name": "klay-js",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "Component to KIELER/KLay Layered JavaScript",
   "dependencies": {},
   "devDependencies": {
@@ -16,7 +16,8 @@
   "keywords": [
     "autolayout",
     "graph",
-    "gwt"
+    "gwt",
+    "webworker"
   ],
   "author": "Vilson Vieira <vilson@void.cc>",
   "license": "MIT"

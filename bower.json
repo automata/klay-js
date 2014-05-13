@@ -1,16 +1,17 @@
 {
   "name": "klay-js",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "homepage": "https://github.com/automata/klay-js",
   "authors": [
     "Vilson Vieira <vilson@void.cc>"
   ],
   "description": "Component to KIELER/KLay Layered JavaScript",
-  "main": "klay/klay.nocache.js",
+  "main": "klay.js",
   "keywords": [
     "autolayout",
     "graph",
-    "gwt"
+    "gwt",
+    "webworker"
   ],
   "license": "MIT",
   "ignore": [
