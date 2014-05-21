@@ -1,6 +1,8 @@
 KLayJS: Layered Graph Auto-layout
 ===
 
+![klay-js in the-graph](https://farm3.staticflickr.com/2907/14050666419_5db3324ff3_o_d.gif)
+
 This is a Bower component and easy-to-use wrapper to KLayJS, making it
 possible to use KLayJS as a Web Worker on modern browsers.
 
