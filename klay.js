@@ -103,8 +103,8 @@ var klay = (function () {
         portProperties.outportSide = 'SOUTH';
       }
       var nodeProperties = {
-        width: 108,
-        height: 108
+        width: 72,
+        height: 72
       };
       // Start KGraph building
       var kGraph = {
@@ -124,9 +124,8 @@ var klay = (function () {
             id: node.id + '_' + key,
             width: portProperties.width,
             height: portProperties.height,
-            properties: {
-              'de.cau.cs.kieler.portSide': portProperties.inportSide
-            }
+            x: portInfo[node.id].inports[key].x - portProperties.width,
+            y: portInfo[node.id].inports[key].y
           };
         });
         var outPorts = portInfo[node.id].outports;
@@ -136,9 +135,8 @@ var klay = (function () {
             id: node.id + '_' + key,
             width: portProperties.width,
             height: portProperties.height,
-            properties: {
-              'de.cau.cs.kieler.portSide': portProperties.outportSide
-            }
+            x: portInfo[node.id].outports[key].x,
+            y: portInfo[node.id].outports[key].y
           };
         });
 

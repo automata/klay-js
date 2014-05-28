@@ -1,6 +1,6 @@
 {
   "name": "klay-js",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Component to KIELER/KLay Layered JavaScript",
   "dependencies": {},
   "devDependencies": {
