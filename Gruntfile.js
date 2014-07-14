@@ -1,10 +1,18 @@
 module.exports = function (grunt) {
   grunt.initConfig({
+    config: {
+      baseurl: 'http://rtsys.informatik.uni-kiel.de/~kieler/files/',
+      folder: 'release_pragmatics_2014-05/klayjs/',
+      file: 'klay_layered_js_webworkerlinker_nightly_v0.1.0.zip'
+    }, 
     curl: {
-      'klay_layered_js_webworkerlinker_nightly_latest.zip': 'http://rtsys.informatik.uni-kiel.de/~kieler/files/nightly/klayjs/klay_layered_js_webworkerlinker_nightly_latest.zip'
+      'get-klayjs': {
+        src: '<%= config.baseurl %><%= config.folder %><%= config.file%>',
+        dest: '<%= config.file %>'
+      }
     },
     unzip: {
-      'klay': 'klay_layered_js_webworkerlinker_nightly_latest.zip'
+      'klay': '<%= config.file %>'
     },
     rename: {
       options: {
@@ -16,7 +24,7 @@ module.exports = function (grunt) {
       }
     },
     clean: {
-      klay_package: 'klay_layered_js_webworkerlinker_nightly_latest.zip',
+      klay_package: '<%= config.file %>',
       temp_dir: 'klay'
     }
   });
