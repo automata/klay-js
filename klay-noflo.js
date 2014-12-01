@@ -31,15 +31,18 @@ var klay = (function () {
     init: function (params) {
       // Set up some properties
       var callback, workerScript;
+      
       if ("onSuccess" in params) {
         callback = params.onSuccess;
       } else {
         callback = console.log;
       }
-      if ("workerScript" in params) {
+      if ("KLAY_CONFIG" in window && "workerScript" in window.KLAY_CONFIG) {
+        workerScript = window.KLAY_CONFIG.workerScript;
+      } else if ("workerScript" in params) {
         workerScript = params.workerScript;
       } else {
-        workerScript = "klay-worker.js";
+        workerScript = "klay.js";
       }
       // Start the WebWorker
       worker = new Worker(workerScript);
