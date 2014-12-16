@@ -1,3 +1,10 @@
+*** DEPRECATED ***
+===
+
+__For oficial KLayJS, please use https://github.com/OpenKieler/klayjs.__
+
+__For KLayJS + NoFlo wrapping, please use https://github.com/noflo/klayjs-noflo.__
+
 KLayJS: Layered Graph Auto-layout
 ===
 
